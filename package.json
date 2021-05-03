@@ -1,0 +1,15 @@
+{
+  "name": "flood_map_npm",
+  "version": "1.0.0",
+  "description": "NASA Harvet's web flood map application using npm",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ih-leaflet-canvaslayer-field": "^1.5.3"
+  }
+}
