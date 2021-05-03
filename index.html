@@ -31,6 +31,17 @@
     </ul>
     <h1>Chilukutu, Zambia Flood Map Dec. 2020</h1>
     <p>This is a flood map created from Sentinel-1 data. Powered by Leaflet</p>
+
+    <div class="scrollBar-Box">
+        <ul>
+            <li>
+                <label>Difference dB</label>
+                <input id="dB_threshold" type="range" min="0" max="10" step="0.1" value="0" class="dBRange">
+                <span id="dB_meter" style="display: block;">slide me!</span>
+            </li>
+        </ul>
+    </div>
+
     <div class="mapContainer">
         <div id="mapid"></div>
     </div>

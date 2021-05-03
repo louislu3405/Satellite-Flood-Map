@@ -31,6 +31,16 @@ d3.request("src/testTiff(1224difference).tif").responseType('arraybuffer').get(
           }
       });
 
+      // dynamic filtering
+      let threshold = document.getElementById("dB_threshold");
+      threshold.addEventListener('change', function() {
+          let thres = threshold.value;
+          let f = function (v) {
+              return v >= thres
+          };
+          layerGeo.setFilter(f);
+          document.getElementById('dB_meter').innerHTML = '> ' + thres + ' dB'
+      })
 
       L.control.layers({
           "Geopotential Height": layerGeo,
